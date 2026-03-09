@@ -6,7 +6,7 @@ class Jotlogger < Formula
   homepage "https://github.com/EfeDurmaz16/jot-logger"
   url "https://github.com/EfeDurmaz16/jot-logger.git",
       tag: "v0.1.0",
-      revision: "5713fc9"
+      revision: "5713fc92d6ebca15908436ddf51b469fc6cc0d6c"
   license "MIT"
   head "https://github.com/EfeDurmaz16/jot-logger.git", branch: "main"
 
