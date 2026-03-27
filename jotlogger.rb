@@ -5,21 +5,21 @@
 class Jotlogger < Formula
   desc "Workflow-aware developer operations terminal"
   homepage "https://github.com/EfeDurmaz16/jot-logger"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/EfeDurmaz16/jot-logger/releases/download/v0.4.0/jotlogger_darwin_amd64.tar.gz"
-      sha256 "5bb2b3a35dbf9a8d5e2b9b177494af4292a39c66a134381f6c940d3c8e10e0e1"
+      url "https://github.com/EfeDurmaz16/jot-logger/releases/download/v0.4.1/jotlogger_darwin_amd64.tar.gz"
+      sha256 "94df4eb25bb811af28a5273baacc05a42ce9f15eccb7c3449cb9c66252388f12"
 
       define_method(:install) do
         bin.install "jotlogger"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/EfeDurmaz16/jot-logger/releases/download/v0.4.0/jotlogger_darwin_arm64.tar.gz"
-      sha256 "ad1dbf6e8f9c4da8f35ad602732335f8895fd8fc8d0b84a0da6afe65db7fc09f"
+      url "https://github.com/EfeDurmaz16/jot-logger/releases/download/v0.4.1/jotlogger_darwin_arm64.tar.gz"
+      sha256 "b1913e7670b8526d6b72a86630ebc040994f274689e9d90a588f2bb004c5c2f9"
 
       define_method(:install) do
         bin.install "jotlogger"
@@ -29,8 +29,8 @@ class Jotlogger < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/EfeDurmaz16/jot-logger/releases/download/v0.4.0/jotlogger_linux_amd64.tar.gz"
-      sha256 "a91f1bde916af6510f60dc8676db076319bcc25f0c8313c6083fa93037f9a4a5"
+      url "https://github.com/EfeDurmaz16/jot-logger/releases/download/v0.4.1/jotlogger_linux_amd64.tar.gz"
+      sha256 "d69451ab6e9a009a6ba0f23f2d0f224b46beaf6b77fd2137b41513de9d50d643"
       define_method(:install) do
         bin.install "jotlogger"
       end
