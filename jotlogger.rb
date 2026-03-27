@@ -11,7 +11,7 @@ class Jotlogger < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/EfeDurmaz16/jot-logger/releases/download/v0.4.0/jotlogger_darwin_amd64.tar.gz"
-      sha256 "c2b5838745257ff185f49f1a4f61f05362ee206e25f60631555cc0794d26a5a1"
+      sha256 "5bb2b3a35dbf9a8d5e2b9b177494af4292a39c66a134381f6c940d3c8e10e0e1"
 
       define_method(:install) do
         bin.install "jotlogger"
@@ -19,7 +19,7 @@ class Jotlogger < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/EfeDurmaz16/jot-logger/releases/download/v0.4.0/jotlogger_darwin_arm64.tar.gz"
-      sha256 "ee1a9730a439e20886b0ca06f9b6037ecc9d4bf6b2648c7de06ec22515348152"
+      sha256 "ad1dbf6e8f9c4da8f35ad602732335f8895fd8fc8d0b84a0da6afe65db7fc09f"
 
       define_method(:install) do
         bin.install "jotlogger"
@@ -30,7 +30,7 @@ class Jotlogger < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/EfeDurmaz16/jot-logger/releases/download/v0.4.0/jotlogger_linux_amd64.tar.gz"
-      sha256 "30511a7a0f2899db45ede0fea57e214d580b9f80c529c76665e7396e87fb72b0"
+      sha256 "a91f1bde916af6510f60dc8676db076319bcc25f0c8313c6083fa93037f9a4a5"
       define_method(:install) do
         bin.install "jotlogger"
       end
